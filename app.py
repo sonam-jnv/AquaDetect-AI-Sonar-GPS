@@ -112,16 +112,22 @@ BOX_RGB = {
 
 @st.cache_resource
 def load_models():
-    """Loads and caches both the Debris Detection model and Animal Detection model."""
-    if os.path.exists(DEBRIS_MODEL_PATH):
+    # Loads and caches both the debris detection model and animal detection model
+    try:
         debris_model = YOLO(DEBRIS_MODEL_PATH)
         debris_status = f"Sonar Debris Model: {os.path.basename(DEBRIS_MODEL_PATH)}"
-    elif os.path.exists(FALLBACK_DEBRIS_PATH):
-        debris_model = YOLO(FALLBACK_DEBRIS_PATH)
-        debris_status = f"Sonar Debris Model (Fallback): {os.path.basename(FALLBACK_DEBRIS_PATH)}"
-    else:
-        debris_model = None
-        debris_status = "Debris Model: Not Found"
+    except:
+        debris_model = YOLO("yolov8n.pt")
+        debris_status = "Sonar Debris Model: yolov8n (auto-downloaded)"
+
+    try:
+        animal_model = YOLO("yolov8n.pt")
+        animal_status = "Wildlife Model: yolov8n.pt"
+    except Exception as e:
+        animal_model = None
+        animal_status = f"Wildlife Model Error: {e}"
+
+    return debris_model, animal_model, debris_status, animal_status
 
     if os.path.exists(ANIMAL_MODEL_PATH):
         animal_model = YOLO(ANIMAL_MODEL_PATH)
