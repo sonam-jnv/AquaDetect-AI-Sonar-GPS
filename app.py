@@ -32,6 +32,7 @@ import cv2
 import numpy as np
 import pandas as pd
 from PIL import Image, ExifTags
+import requests
 import streamlit as st
 import folium
 from streamlit_folium import st_folium
