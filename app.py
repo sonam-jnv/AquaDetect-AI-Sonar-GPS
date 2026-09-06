@@ -457,6 +457,10 @@ def run_enhanced_dual_yolo_inference(
             x1, y1, x2, y2 = deb["box"]
             cls_name = deb["class"]
             conf = deb["confidence"]
+
+           if cls_name.lower() == "wall":
+              continue
+              
             color = BOX_RGB.get(cls_name, (30, 144, 255))
 
             cv2.rectangle(annotated_np, (x1, y1), (x2, y2), color, 2)
