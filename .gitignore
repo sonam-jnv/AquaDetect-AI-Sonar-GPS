@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+runs/
+data/
+maps/
+*.pt
+*.csv
+*.mp4
+*.jpg
+*.jpeg
+*.png

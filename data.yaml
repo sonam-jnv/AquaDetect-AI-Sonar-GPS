@@ -1,0 +1,17 @@
+path: c:\Users\sonam\Desktop\AquaDetect-AI-Sonar-GPS\data\processed
+train: images/train
+val: images/val
+test: images/test
+nc: 11
+names:
+- bottle
+- can
+- chain
+- drink-carton
+- hook
+- propeller
+- shampoo-bottle
+- standing-bottle
+- tire
+- valve
+- wall
