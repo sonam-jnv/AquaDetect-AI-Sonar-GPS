@@ -1,7 +1,7 @@
-# AquaDetect-AI-Sonar-GPS
+# BLUE GUARD AI
 
 ### Project Description
-**AquaDetect-AI-Sonar-GPS** is an autonomous underwater marine debris detection, classification, and geo-telemetry tracking system powered by **Ultralytics YOLOv8** and simulated **4-Satellite Marine GPS telemetry**. It processes Forward-Looking Sonar (FLS) acoustic frames to localize submerged debris and logs spatial coordinates with depth and compass heading on an interactive geospatial map.
+**BLUE GUARD AI** is an autonomous underwater marine debris detection, classification, and geo-telemetry tracking system powered by **Ultralytics YOLOv8** and simulated **4-Satellite Marine GPS telemetry**. It processes Forward-Looking Sonar (FLS) acoustic frames to localize submerged debris and logs spatial coordinates with depth and compass heading on an interactive geospatial map.
 
 ---
 

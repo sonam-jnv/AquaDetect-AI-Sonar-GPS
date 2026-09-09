@@ -122,7 +122,7 @@ def run_preprocessing(
     output_dir=None
 ):
     print("=" * 65)
-    print(" AquaDetect-AI-Sonar-GPS : Dataset Preprocessing & YOLO Formatting ")
+    print(" BLUE GUARD AI : Dataset Preprocessing & YOLO Formatting ")
     print("=" * 65)
     
     if output_dir is None:

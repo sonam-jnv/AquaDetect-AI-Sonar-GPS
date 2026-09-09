@@ -86,7 +86,7 @@ def parse_args():
 
 def train_sonar_yolo(args):
     print("=" * 65)
-    print(" AquaDetect-AI-Sonar-GPS : YOLOv8 Model Training ")
+    print(" BLUE GUARD AI : YOLOv8 Model Training ")
     print("=" * 65)
 
     # 1. Validate Dataset Configuration
